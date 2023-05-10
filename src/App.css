@@ -25,24 +25,54 @@
   transition: all .5s;
 }
 
+.mainTextBefore{
+  display: none;
+}
+
 .mainText{
   color: white;
   font-family: 'Roboto', sans-serif;
-  display: flex;
   align-items: flex-start;
   height: 60vh;
   padding-top: 50px;
+  transition: all 5s;
+  animation: animateLeft;
+  animation-timing-function: ease-in;
+  animation-duration: 5s;
 }
 
+@keyframe animateLeft{
+  from{
+    display:"none";
+  }
+  to{
+    display:"block";
+  }
+}
 
-.mainText *{
-  animation-name: animateleft;
-  animation-duration: 10s;
+.mainText p{
+  font-weight: 100;
+  font-size: 25px;
+  margin: 40px 0;
+}
+
+.button{
+  color: white;
+  background-color: transparent;
+  padding: 15px 30px;
+  border: 1px solid white;
+  margin: 20px 20px 0px 0px;
+  transition: all 0.1s;
+}
+
+.button:hover{
+  transform: scale(103%);
 }
 
 .downIcon{
   text-align: center;
   margin-top: 30px;
+  cursor: pointer;
 }
 
 .downIcon *{
@@ -53,6 +83,10 @@
   color: gray;
   text-align: center;
   margin-top: 15px;
+}
+
+.info h2{
+  margin: 35px 0px;
 }
 
 .companies{
@@ -66,6 +100,37 @@
 
 .overview{
   display: flex;
+  align-items: center;
+}
+
+.overviewDiv{
+  display: flex;
+  align-items: center;
+  margin-left: 75px;
+}
+
+.overviewDiv svg{
+  color: #960909;
+}
+
+.overviewDiv div{
+  margin: 25px 0px 45px 45px;
+}
+
+.overviewNumber{
+  font-weight: bold;
+  font-size: 45px;
+  margin-bottom: 0px;
+}
+
+.overviewHeading{
+  font-size: 25px;
+}
+
+.cocaImg{
+  width: 54vw;
+  height: 30em;
+  margin-left: 35px;
 }
 
 @keyframes animateleft{

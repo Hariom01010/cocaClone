@@ -1,0 +1,181 @@
+.header{
+    background-color: #960909;
+    height: 75vh;
+  }
+  
+  .firstHeaderDiv{
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+  }
+  
+  .imgDiv{    
+    filter: drop-shadow(13px 14px 15px #222222);
+  }
+  
+  .canImg{
+    margin-top: 25px;
+    height: 60vh;
+    background-color: transparent;
+    clip-path: polygon(8% -77%, 99% 16%, 65% 105%, -100% 83%);
+  }
+  
+  .canImg:hover{
+    transform: scale(105%);
+    transition: all .5s;
+  }
+  
+  .mainTextBefore{
+    display: none;
+  }
+  
+  .mainText{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    align-items: flex-start;
+    height: 60vh;
+    padding-top: 50px;
+    transition: all 5s;
+    animation: animateLeft;
+    animation-timing-function: ease-in;
+    animation-duration: 5s;
+  }
+  
+  @keyframe animateLeft{
+    from{
+      display:"none";
+    }
+    to{
+      display:"block";
+    }
+  }
+  
+  .mainText p{
+    font-weight: 100;
+    font-size: 25px;
+    margin: 40px 0;
+  }
+  
+  .button{
+    color: white;
+    background-color: transparent;
+    padding: 15px 30px;
+    border: 1px solid white;
+    margin: 20px 20px 0px 0px;
+    transition: all 0.1s;
+  }
+  
+  .button:hover{
+    transform: scale(103%);
+  }
+  
+  .downIcon{
+    text-align: center;
+    margin-top: 30px;
+    cursor: pointer;
+  }
+  
+  .downIcon *{
+    color: white;
+  }
+  
+  .info{
+    color: gray;
+    text-align: center;
+    margin-top: 15px;
+  }
+  
+  .info h2{
+    margin: 35px 0px;
+  }
+  
+  .companies{
+    display: flex;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 30px 150px;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .overview{
+    display: flex;
+    align-items: center;
+  }
+  
+  .overviewDiv{
+    display: flex;
+    align-items: center;
+    margin-left: 75px;
+  }
+  
+  .overviewDiv svg{
+    color: #960909;
+  }
+  
+  .overviewDiv div{
+    margin: 25px 0px 15px 45px;
+  }
+  
+  .overviewNumber{
+    font-weight: bold;
+    font-size: 45px;
+    margin-bottom: 0px;
+  }
+  
+  .overviewHeading{
+    font-size: 25px;
+  }
+  
+  .cocaImg{
+    width: 50vw;
+    height: 25em;
+    margin-left: 60px;
+  }
+
+  .productTry{
+    display: flex;
+    background-color: #960909;
+    color: white;
+  }
+
+  .productTry img{
+    margin: 0px 5rem;
+  }
+
+  .productTry div{
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .productTry div p{
+    font-size: 25px;
+    margin-left: 0px;
+  }
+
+  .productTryHeading{
+    margin: 2em 0px 1em 0px;
+  }
+  
+  .productTryBtn{
+    color: white;
+    background-color: transparent;
+    padding: 15px 30px;
+    border: 1px solid white;
+    margin: 9em 3em 0px 0px;
+    transition: all 0.1s;
+  }
+
+  .productTryBtn:hover{
+    box-shadow: 0px 0px 10px 10px #ff0000;
+    transform: scale(103%);
+  }
+
+  @keyframes animateleft{
+    from{
+      display: none;
+    } 
+    to{
+      display: block;
+    }
+  }
+  
